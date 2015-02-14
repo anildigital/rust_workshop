@@ -1,16 +1,14 @@
-let b = 3i32;
-let a = if b > 1 {
-    let mut c = b - 5;
-    c = c * b;
-    c
-} else {
-    li32
-}
+fn main() {
 
-fn greater(a: i32, b: i32) -> i32 {
-    if a > b {
-        a
-    } else {
-        b
-    }
+    let number = 5u32;
+
+    let size = match number {
+        0 => "none",
+        2 | 3 => "tiny",
+        4...7 => "small",
+        8...20 => "medium",
+        _ => "large"
+    };
+
+    println!("The size is: {}", size);
 }
