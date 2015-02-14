@@ -1,5 +1,4 @@
 fn main() {
-
     let number = 5u32;
 
     let size = match number {
